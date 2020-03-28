@@ -101,16 +101,11 @@
 
 
 	<!-- form -->
-	<form action = 'register' method="post">
+	<form action = 'login' method="post">
 		{% csrf_token %}
-		<input type="text" name="first_name" placeholder="First name"> <br>
-		<input type="text" name="last_name" placeholder="last name"><br>
 		<input type="text" name="username" placeholder="user name"><br>
-		<input type="text" name="email" placeholder="email"><br>
-		<input type="text" name="password1" placeholder="Password"><br>
-		<input type="text" name="password2" placeholder="Confirm password"><br>
-		<input type="submit" name="Envoyer">
-
+		<input type="text" name="password" placeholder="Password"><br>
+		<input class="submit">Login</input>
 	</form>
 
 	<div>
